@@ -41,8 +41,9 @@ main {
   overflow: hidden;
   margin: 0 auto;
   margin-top: 40px;
-  background: none;
-  background-color: #ffffff;
+  color: #000000;
+  /* background-color: #ffffff; */
+  background: #ffffff;
 }
 
 .input-container .search-box {
@@ -89,6 +90,7 @@ main {
   flex: 1;
   border: none;
   outline: none;
+  color: #000000;
   background: transparent;
 }
 
