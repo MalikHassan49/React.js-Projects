@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from "axios";
+const VITE_API_URL = import.meta.env.VITE_API_URL;
 import "./Todo.css";
 
 function Todo() {
@@ -10,7 +11,7 @@ function Todo() {
   useEffect(() => {
     async function fetchTodos() {
       try {
-        const response = await axios.get(`http://localhost:8400/api/v1/todos/get-todos`);
+        const response = await axios.get(`${VITE_API_URL}/api/v1/todos/get-todos`);
         console.log(response);
         console.log(response.data);
         if (response.data.success) {
@@ -32,7 +33,7 @@ function Todo() {
     // if todo is edit
     if (editingId !== null) {
       try {
-        const response = await axios.put(`http://localhost:8400/api/v1/todos/${editingId}/update-todo`,
+        const response = await axios.put(`${VITE_API_URL}/api/v1/todos/${editingId}/update-todo`,
           {
             todoText: todo
           }
@@ -49,7 +50,7 @@ function Todo() {
     // todo is added
     else {
       try {
-        const response = await axios.post(`http://localhost:8400/api/v1/todos/add-todo`, {
+        const response = await axios.post(`${VITE_API_URL}/api/v1/todos/add-todo`, {
           todoText: todo
         });
 
@@ -69,7 +70,7 @@ function Todo() {
 
   async function handleDeleteTodo(id) {
     try {
-      const response = await axios.delete(`http://localhost:8400/api/v1/todos/${id}/delete-todo`);
+      const response = await axios.delete(`${VITE_API_URL}/api/v1/todos/${id}/delete-todo`);
       console.log("Response Data: ", response);
       const updatedTodosArr = todos.filter(item => item._id != id);
       setTodos(updatedTodosArr);
