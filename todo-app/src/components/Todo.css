@@ -81,13 +81,14 @@ main {
   border-radius: 8px;
   overflow: hidden;
   margin-block: 20px;
-  background: transparent;
+  background-color: #ffffff;
 }
 
 .todos .todo-container {
   flex: 1;
   border: none;
   outline: none;
+  background: transparent;
 }
 
 .todos .pencil-emoji {
