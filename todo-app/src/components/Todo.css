@@ -41,9 +41,7 @@ main {
   overflow: hidden;
   margin: 0 auto;
   margin-top: 40px;
-  color: #000000;
-  /* background-color: #ffffff; */
-  background: #ffffff;
+  background-color: #ffffff;
 }
 
 .input-container .search-box {
@@ -51,6 +49,8 @@ main {
   border: none;
   outline: none;
   padding: 8px 12px;
+  color: #000000;
+  background: transparent;
 }
 
 .input-container button {
