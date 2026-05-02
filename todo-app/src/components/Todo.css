@@ -70,6 +70,17 @@ main {
   background-color: #696767;
 }
 
+.input-container .add-btn {
+  background-color: lightgrey;
+  border: none;
+}
+
+.input-container .save-btn {
+  display: none;
+  background-color: lightgray;
+  border: none;
+}
+
 /* todos */
 .todos {
   display: flex;
@@ -100,8 +111,8 @@ main {
   cursor: pointer;
   background-color: lightgrey;
   border: none;
-  padding: 2px 4px;
-  border-radius: 2px;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 .todos .trash-emoji {
@@ -109,21 +120,8 @@ main {
   cursor: pointer;
   background-color: lightgrey;
   border: none;
-  padding: 2px 4px;
-  border-radius: 2px;
-}
-
-.todos .add-btn {
-  background-color: lightgrey;
-  border: none;
-}
-
-.todos .save-btn {
-  display: none;
-  background-color: lightgray;
-  border: none;
-  padding: 2px 4px;
-  border-radius: 2px;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 @media screen and (max-width: 600px) {
