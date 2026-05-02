@@ -98,15 +98,32 @@ main {
   width: 30px;
   margin-right: 10px;
   cursor: pointer;
+  background-color: lightgrey;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 2px;
 }
 
 .todos .trash-emoji {
   width: 30px;
   cursor: pointer;
+  background-color: lightgrey;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+.todos .add-btn {
+  background-color: lightgrey;
+  border: none;
 }
 
 .todos .save-btn {
   display: none;
+  background-color: lightgray;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 600px) {
