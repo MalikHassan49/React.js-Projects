@@ -41,6 +41,7 @@ main {
   overflow: hidden;
   margin: 0 auto;
   margin-top: 40px;
+  background: none;
   background-color: #ffffff;
 }
 
