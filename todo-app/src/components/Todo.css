@@ -81,7 +81,7 @@ main {
   border-radius: 8px;
   overflow: hidden;
   margin-block: 20px;
-  background-color: #ffffff;
+  background: transparent;
 }
 
 .todos .todo-container {
