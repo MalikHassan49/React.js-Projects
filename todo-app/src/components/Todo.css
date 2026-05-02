@@ -76,7 +76,6 @@ main {
 }
 
 .input-container .save-btn {
-  display: none;
   background-color: lightgray;
   border: none;
 }
