@@ -11,10 +11,7 @@ function Todo() {
   useEffect(() => {
     async function fetchTodos() {
       try {
-        console.log("API URL", API);
         const response = await axios.get(`${API}/api/v1/todos/get-todos`);
-        console.log(response);
-        console.log(response.data);
         if (response.data.success) {
           setTodos(response.data.data);
         }
